@@ -29,7 +29,7 @@ class ChirpPolicy
 
     public function delete(User $user, Chirp $chirp): bool
     {
-        //
+        return $this->update($user, $chirp);
     }
 
     public function restore(User $user, Chirp $chirp): bool
